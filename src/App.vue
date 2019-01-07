@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-navbar></app-navbar>
+    <app-navbar>DVD Catalog</app-navbar>
   </div>
 </template>
 

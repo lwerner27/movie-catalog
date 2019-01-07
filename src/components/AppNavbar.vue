@@ -2,7 +2,7 @@
     <div>
         <nav>
             <div class="nav-wrapper container">
-                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#!" class="brand-logo"><slot></slot></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#"><i class="large material-icons">cloud_upload</i></a></li>
