@@ -1,16 +1,19 @@
 <template>
   <div>
     <app-navbar>DVD Catalog</app-navbar>
+    <home></home>
   </div>
 </template>
 
 <script>
 import AppNavbar from './components/AppNavbar.vue'
+import Home from './pages/Home.vue'
 
 export default {
   name: 'app',
   components: {
-    AppNavbar
+    AppNavbar,
+    Home
   }
 }
 </script>
