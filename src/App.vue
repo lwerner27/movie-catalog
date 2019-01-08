@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-navbar>DVD Catalog</app-navbar>
+    <app-navbar :status="loggedIn">DVD Catalog</app-navbar>
     <home></home>
   </div>
 </template>
@@ -11,6 +11,11 @@ import Home from './pages/Home.vue'
 
 export default {
   name: 'app',
+  data: () => (
+    {
+      loggedIn: false
+    }
+  ),
   components: {
     AppNavbar,
     Home

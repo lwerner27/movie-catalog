@@ -1,5 +1,19 @@
 <template>
-    <ul class="collection with-header">
+    <div class="collection">
         <slot></slot>
-    </ul>
+    </div>
 </template>
+
+<script>
+export default {
+    props: {
+        header: String
+    }
+}
+</script>
+
+<style scoped>
+    li {
+        text-decoration: none;
+    }
+</style>
