@@ -1,6 +1,9 @@
 <template>
-    <div class="collection">
-        <slot></slot>
+    <div>
+        <h3 class="teal-text text-lighten-2">Movies</h3>
+        <div class="collection scroll-collection">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -15,5 +18,10 @@ export default {
 <style scoped>
     li {
         text-decoration: none;
+    }
+
+    .scroll-collection {
+        max-height: 500px;
+        overflow-y:auto
     }
 </style>

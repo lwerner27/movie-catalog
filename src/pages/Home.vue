@@ -13,6 +13,12 @@
                         <app-collection-item>Rocky</app-collection-item>
                         <app-collection-item>Rocky</app-collection-item>
                         <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
                     </app-collection>
                 </div>
             </div>
@@ -35,4 +41,3 @@ export default {
     }
 }
 </script>
-
