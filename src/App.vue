@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-page">
     <app-navbar :status="loggedIn">DVD Catalog</app-navbar>
     <home></home>
   </div>
@@ -32,4 +32,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.main-page {
+  min-height: 100vh;
+}
 </style>
+

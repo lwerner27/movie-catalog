@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h3 class="teal-text text-lighten-2">Movies</h3>
         <div class="collection scroll-collection">
             <slot></slot>
         </div>
@@ -16,6 +15,11 @@ export default {
 </script>
 
 <style scoped>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
     li {
         text-decoration: none;
     }
@@ -24,4 +28,6 @@ export default {
         max-height: 500px;
         overflow-y:auto
     }
+
+    
 </style>
