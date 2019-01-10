@@ -21,7 +21,7 @@ export default {
     }
 
     .scroll-collection {
-        height: 300px;
+        max-height: 300px;
         overflow-y: scroll
     }
 </style>

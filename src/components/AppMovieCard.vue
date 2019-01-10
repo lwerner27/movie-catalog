@@ -12,7 +12,7 @@
                 <p><Strong>Stars:</Strong> {{ stars }}</p>
             </div>
             <div class="card-action">
-                <a :href="imdbLink" target="_blank">IMDb</a>
+                <a :href="imdbLink" target="_blank">imdb</a>
             </div>
         </div>
     </div>
