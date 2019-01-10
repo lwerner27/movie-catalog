@@ -1,14 +1,18 @@
 <template>
     <div class="card horizontal">
-        <div class="card-image">
-            <img src="https://lorempixel.com/100/190/nature/6">
+        <div class="card-image valign-wrapper">
+            <img :src="imgLink">
         </div>
         <div class="card-stacked">
             <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                <h5>{{ title }}</h5>
+                <hr>
+                <p> {{ description }}</p>
+                <hr>
+                <p><Strong>Stars:</Strong> {{ stars }}</p>
             </div>
             <div class="card-action">
-                <a :href="imdbLink">IMDB</a>
+                <a :href="imdbLink" target="_blank">IMDB</a>
             </div>
         </div>
     </div>
@@ -21,7 +25,7 @@ export default {
         description: String,
         stars: String,
         imdbLink: String,
-        imgLInk: String
+        imgLink: String
     }
 }
 </script>

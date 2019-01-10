@@ -30,7 +30,7 @@
                 </div>
                 <div class="col s6">
                     <h3>Movie Details</h3>
-                    <app-movie-card title="Rocky"></app-movie-card>
+                    <app-movie-card title="Rocky" :description="movieDescription" :stars="movieStars" :imgLink="movieImg" :imdbLink="imdbLink"></app-movie-card>
                 </div>
             </div>
         </div>
@@ -44,7 +44,12 @@ import AppMovieCard from '../components/AppMovieCard.vue'
 export default {
     data: () => (
         {
-            selectedMovie: true
+            selectedMovie: true,
+            movieTitle: "Rocky",
+            movieDescription: "A small-time boxer gets a supremely rare chance to fight a heavy-weight champion in a bout in which he strives to go the distance for his self-respect.",
+            movieStars: "Sylvester Stallone, Talia Shire, Burt Young",
+            imdbLink: "https://www.imdb.com/title/tt0075148/?ref_=ttpl_pl_tt",
+            movieImg: "https://m.media-amazon.com/images/M/MV5BMTY5MDMzODUyOF5BMl5BanBnXkFtZTcwMTQ3NTMyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
         }
     ),
     components: {
