@@ -33,8 +33,5 @@ export default {
   margin-top: 60px;
 }
 
-.main-page {
-  min-height: 100vh;
-}
 </style>
 

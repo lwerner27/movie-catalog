@@ -19,15 +19,4 @@ export default {
         margin: 0px;
         padding: 0px;
     }
-
-    li {
-        text-decoration: none;
-    }
-
-    .scroll-collection {
-        max-height: 500px;
-        overflow-y:auto
-    }
-
-    
 </style>
