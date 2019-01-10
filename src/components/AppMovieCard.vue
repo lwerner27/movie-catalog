@@ -1,5 +1,5 @@
 <template>
-    <div class="card horizontal">
+    <div class="card horizontal card-height">
         <div class="card-image valign-wrapper">
             <img :src="imgLink">
         </div>
@@ -12,7 +12,7 @@
                 <p><Strong>Stars:</Strong> {{ stars }}</p>
             </div>
             <div class="card-action">
-                <a :href="imdbLink" target="_blank">IMDB</a>
+                <a :href="imdbLink" target="_blank">IMDb</a>
             </div>
         </div>
     </div>
@@ -29,3 +29,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .card-height {
+        min-height: 300px;
+    }
+</style>
+

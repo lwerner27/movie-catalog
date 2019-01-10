@@ -11,7 +11,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col s6">
+                <div v-if="selectedMovie" class="col s12 m6 custom-col">
+                    <h3>Movie Details</h3>
+                    <app-movie-card :title="movieTitle" :description="movieDescription" :stars="movieStars" :imgLink="movieImg"
+                        :imdbLink="imdbLink"></app-movie-card>
+                </div>
+                <div class="col s12 m6 custom-col div-scroll">
                     <h3>Movie List</h3>
                     <app-collection>
                         <app-collection-item>Rocky</app-collection-item>
@@ -26,11 +31,8 @@
                         <app-collection-item>Rocky</app-collection-item>
                         <app-collection-item>Rocky</app-collection-item>
                         <app-collection-item>Rocky</app-collection-item>
+                        <app-collection-item>Rocky</app-collection-item>
                     </app-collection>
-                </div>
-                <div class="col s6">
-                    <h3>Movie Details</h3>
-                    <app-movie-card title="Rocky" :description="movieDescription" :stars="movieStars" :imgLink="movieImg" :imdbLink="imdbLink"></app-movie-card>
                 </div>
             </div>
         </div>
