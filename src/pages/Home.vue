@@ -30,6 +30,7 @@
                 </div>
                 <div class="col s6">
                     <h3>Movie Details</h3>
+                    <app-movie-card title="Rocky"></app-movie-card>
                 </div>
             </div>
         </div>
@@ -39,6 +40,7 @@
 <script>
 import AppCollection from '../components/AppCollection.vue'
 import AppCollectionItem from '../components/AppCollectionItem.vue'
+import AppMovieCard from '../components/AppMovieCard.vue'
 export default {
     data: () => (
         {
@@ -47,7 +49,8 @@ export default {
     ),
     components: {
         AppCollection,
-        AppCollectionItem
+        AppCollectionItem,
+        AppMovieCard
     }
 }
 </script>
