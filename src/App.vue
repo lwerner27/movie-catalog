@@ -1,8 +1,10 @@
 <template>
   <div class="main-page">
     <app-navbar :status="loggedIn">DVD Catalog</app-navbar>
-    <home></home>
-    <add-movie></add-movie>
+    <router-view>
+      <home></home>
+      <add-movie></add-movie>
+    </router-view>
   </div>
 </template>
 
@@ -15,7 +17,7 @@ export default {
   name: 'app',
   data: () => (
     {
-      loggedIn: false
+      loggedIn: true
     }
   ),
   components: {
