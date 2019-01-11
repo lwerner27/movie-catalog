@@ -2,12 +2,14 @@
   <div class="main-page">
     <app-navbar :status="loggedIn">DVD Catalog</app-navbar>
     <home></home>
+    <add-movie></add-movie>
   </div>
 </template>
 
 <script>
 import AppNavbar from './components/AppNavbar.vue'
 import Home from './pages/Home.vue'
+import AddMovie from './pages/AddMovie.vue'
 
 export default {
   name: 'app',
@@ -18,7 +20,8 @@ export default {
   ),
   components: {
     AppNavbar,
-    Home
+    Home,
+    AddMovie
   }
 }
 </script>
