@@ -4,6 +4,7 @@
     <router-view>
       <home></home>
       <add-movie></add-movie>
+      <login></login>
     </router-view>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import AppNavbar from './components/AppNavbar.vue'
 import Home from './pages/Home.vue'
 import AddMovie from './pages/AddMovie.vue'
+import Login from './pages/Login.vue'
 
 export default {
   name: 'app',
@@ -23,7 +25,8 @@ export default {
   components: {
     AppNavbar,
     Home,
-    AddMovie
+    AddMovie,
+    Login
   }
 }
 </script>
