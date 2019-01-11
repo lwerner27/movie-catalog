@@ -7,13 +7,13 @@
                     <hr>
                     <div class="row my-row">
                         <div class="input-field col s12">
-                            <input v-model="username" id="username" type="text" class="validate">
+                            <input v-model.trim="username" id="username" type="text" class="validate">
                             <label for="username">Username</label>
                         </div>
                     </div>
                     <div class="row my-row">
                         <div class="input-field col s12">
-                            <input v-model="password" id="password" type="password" class="validate">
+                            <input v-model.trim="password" id="password" type="password" class="validate">
                             <label for="password">Password</label>
                         </div>
                     </div>
@@ -30,18 +30,18 @@
 
 <script>
 export default {
-    data: () => (
-        {
+    data () {
+        return {
             username: "",
             password: ""
         }
-    ),
+    },
     methods: {
-        onSubmit: () => {
+        onSubmit: function() {
             console.log(this.username)
             console.log(this.password)
         }
-    },
+    }
 }
 </script>
 
