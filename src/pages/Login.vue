@@ -55,7 +55,7 @@ export default {
         margin-left: 30px;
     }
     .my-container {
-        padding-top: 200px;
+        padding-top: 50px;
     }
 </style>
 
