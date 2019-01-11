@@ -1,21 +1,21 @@
 <template>
     <div class="add-movie-page">
         <div class="container my-container">
-            <!-- New Row -->
+            <!-- Header Row -->
             <div class="row">
                 <div class="col s12 m6 offset-m3">
                     <h3>Add A Movie</h3>
                     <hr>
                 </div>
             </div>
-            <!-- New Row -->
+            <!-- Movie Title Row -->
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
                     <input id="title" type="text" class="validate">
                     <label for="title">Title</label>
                 </div>
             </div>
-            <!-- New Row -->
+            <!-- Stars Row -->
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
                     <input id="stars" type="text" class="validate">
@@ -23,7 +23,7 @@
                     <span class="helper-text">Separate names with a comma.</span>
                 </div>
             </div>
-            <!-- New Row -->
+            <!-- Links Row -->
             <div class="row">
                 <div class="input-field col s12 m3 offset-m3">
                     <input id="imdbLink" type="text" class="validate">
@@ -34,14 +34,14 @@
                     <label for="imgLink">Image Link</label>
                 </div>
             </div>
-            <!-- New Row -->
+            <!-- Description Row -->
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
                     <textarea id="description" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Description</label>
+                    <label for="description">Description</label>
                 </div>
             </div>
-            <!-- New Row -->
+            <!-- File Input Row -->
             <div class="row">
                 <div class="col s12 m6 offset-m3">
                     <form action="#">
@@ -57,7 +57,7 @@
                     </form>
                 </div>
             </div>
-            <!-- New Row -->
+            <!-- Submit Btn Row -->
             <div class="row">
                 <div class="col 12 m6 offset-m3">
                     <button class="btn waves-effect waves-light" type="submit" name="action">Submit
