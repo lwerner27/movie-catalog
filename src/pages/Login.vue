@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="row my-btn-row">
-                        <button v-on:click="onSubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
@@ -30,16 +30,10 @@
 
 <script>
 export default {
-    data () {
+    data: function() {
         return {
             username: "",
-            password: ""
-        }
-    },
-    methods: {
-        onSubmit: function() {
-            console.log(this.username)
-            console.log(this.password)
+            password: "",
         }
     }
 }
