@@ -7,7 +7,7 @@
                     <hr>
                     <div class="row my-row">
                         <div class="input-field col s12">
-                            <input v-model.trim="username" id="username" type="text" class="validate">
+                            <input v-model.trim="email" id="username" type="text" class="validate">
                             <label for="username">Username</label>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="row my-btn-row">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <button @click="login" class="btn waves-effect waves-light" type="submit" name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
@@ -29,11 +29,27 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+
 export default {
     data: function() {
         return {
-            username: "",
+            email: "",
             password: "",
+        }
+    },
+    methods: {
+        login: function() {
+            firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+            .then( 
+                (user) => {
+                    alert("Congrats you signed in.")
+                    localStorage.setItem("userObject", JSON.stringify(user))
+                },
+                (err) => {
+                    alert("Oops. " + err.message)
+                }
+            )
         }
     }
 }
