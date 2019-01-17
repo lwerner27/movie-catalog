@@ -10,7 +10,7 @@ Vue.config.productionTip = false
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyC46DTffAqf9Oc_9yNBN50ydXzA_fxozEQ",
+  apiKey: "Your API Key Goes Here",
   authDomain: "movie-catalog-login.firebaseapp.com",
   databaseURL: "https://movie-catalog-login.firebaseio.com",
   projectId: "movie-catalog-login",
